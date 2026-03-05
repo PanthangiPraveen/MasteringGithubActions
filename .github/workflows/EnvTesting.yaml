@@ -5,6 +5,8 @@ env:
 jobs:
   EnvCheck:
     runs-on: ubuntu-latest
+    env:
+      APP_NAME: "test"
     steps:
       - name: check Evn
         run: echo "Connnecting to $APP_NAME"
