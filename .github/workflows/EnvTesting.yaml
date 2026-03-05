@@ -1,0 +1,10 @@
+name: Testing Evn variable
+on: push
+env:
+  APP_NAME: "dev"
+jobs:
+  EnvCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check Evn
+        run: echo "Connnecting to $APP_NAME"
