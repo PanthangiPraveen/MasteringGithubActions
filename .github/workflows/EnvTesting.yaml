@@ -9,4 +9,6 @@ jobs:
       APP_NAME: "test"
     steps:
       - name: check Evn
+        env:
+          APP_NAME: "Prod"
         run: echo "Connnecting to $APP_NAME"
