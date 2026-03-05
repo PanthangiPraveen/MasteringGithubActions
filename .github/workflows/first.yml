@@ -8,3 +8,7 @@ jobs:
       run: |
         echo "Hello World Step1"
         echo "How are you welcome to Github Actions"
+    - name: second job
+      run: |
+        echo "Second Step"
+        echo "job"
