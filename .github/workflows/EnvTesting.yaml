@@ -1,5 +1,5 @@
 name: Testing Evn variable
-on: push
+on: workflow_dispatch
 env:
   APP_NAME: "dev"
 jobs:
