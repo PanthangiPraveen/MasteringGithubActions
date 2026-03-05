@@ -12,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build step
-        run: echo "Checkouting the code from github"
-        run: cat index.html
+        run: |
+            echo "Checkouting the code from github"
+            cat index.html
   test:
     runs-on: ubuntu-latest
     needs: build
