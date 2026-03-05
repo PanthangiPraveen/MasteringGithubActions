@@ -15,6 +15,7 @@ jobs:
           aws-region: us-east-1 # Replace with your desired region
       - name: Run AWS CLI commands
         run: |
-          aws s3 sync ./  aws:s3:::githubactions-pratice/ \
+          aws s3 sync ./  s3:::githubactions-pratice/ \
           --exclude "*" \
           --include "index.html"
+          --acl public-read
