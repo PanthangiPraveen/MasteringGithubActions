@@ -1,6 +1,6 @@
 name: Hosting Static Website
 on:
-  push
+  workflow_dispatch
 jobs:
   staticWebsite:
     runs-on: ubuntu-latest
