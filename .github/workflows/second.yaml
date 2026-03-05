@@ -8,11 +8,13 @@ jobs:
         run: echo "Checkouting the code from github"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Test step
-        run: ehco "Testing the code"
+        run: echo "Testing the code"
   Deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploying step
         run: echo "Deploying"
