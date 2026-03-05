@@ -1,6 +1,13 @@
 name: Mulitple jobs
 on: workflow_dispatch
 jobs:
+  checkout-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: print the html
+        run: cat 
   build:
     runs-on: ubuntu-latest
     steps:
