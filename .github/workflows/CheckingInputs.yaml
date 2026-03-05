@@ -22,5 +22,5 @@ jobs:
     steps:
       - name: Print Inputs
         run: |
-          echo "Deploying ${{ github.event.inputs.artifact_tag || 'latest' }} to ${{ github.event.inputs.environment }}"
-          echo "Or using inputs.*: ${{ inputs.artifact_tag }} to ${{ inputs.environment }}"
+          echo "Deploying ${{ inputs.artifact_tag || 'latest' }} to ${{ inputs.environment }}"
+          
