@@ -12,8 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build step
+        uses: actions/checkout@v4
+      - name: checkout code
         run: |
             echo "Checkouting the code from github"
+            ls -altr
             cat index.html
   test:
     runs-on: ubuntu-latest
