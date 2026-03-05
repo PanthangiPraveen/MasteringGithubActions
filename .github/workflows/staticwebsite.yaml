@@ -1,6 +1,6 @@
 name: Hosting Static Website
 on:
-  workflow_dispatch
+  push
 jobs:
   staticWebsite:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
            echo "Running sync command..."
            aws s3 sync ./ s3://githubactions-pratice/ --exclude "*" --include "index.html" --dryrun
            echo "Dryrun OK, now live sync..."
-           aws s3 sync ./ s3://githubactions-pratice/ --exclude "*" --include "index.html" --acl public-read
+           aws s3 sync ./ s3://githubactions-pratice/ --exclude "*" --include "index.html" 
