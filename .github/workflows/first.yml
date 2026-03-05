@@ -11,4 +11,4 @@ jobs:
     - name: second job
       run: |
         echo "Second Step"
-        echo "job"
+        echo "My name is ${{ vars.MY_VAR }}"
