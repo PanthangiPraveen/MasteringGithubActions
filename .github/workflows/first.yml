@@ -11,4 +11,5 @@ jobs:
     - name: second job
       run: |
         echo "Second Step"
-        echo "My name is ${{ vars.MY_VAR }}"
+        echo "My username is ${{ vars.MY_VAR }}"
+        echo "My password is ${{ secrets.DOCKER_SECRET }}
