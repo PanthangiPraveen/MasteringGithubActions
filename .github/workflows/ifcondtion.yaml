@@ -12,5 +12,5 @@ jobs:
         if: github.ref_name == 'main'
         run: echo "Running if branch is main."
       -  name: run normal
-        run: echo "running without condition." 
+         run: echo "running without condition." 
   
