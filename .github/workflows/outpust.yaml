@@ -3,6 +3,9 @@ on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
+    outputs:
+      version:  ${{ steps.abc.outputs.version }}
+    
     steps:
       - name: step one
         id: abc
