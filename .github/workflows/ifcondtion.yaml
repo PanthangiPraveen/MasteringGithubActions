@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run if branch is main
-        if: github.ref.name == 'main'
-        run: echo "Running if branch is main"
+        if: github.ref_name == 'main'
+        run: echo "Running if branch is main."
       -  name: run normal
         run: echo "running without condition." 
   
