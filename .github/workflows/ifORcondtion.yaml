@@ -1,5 +1,5 @@
 name: checking if OR condition
-on: push
+on: workflow_dispatch
 jobs:
   demo:
     runs-on: ubuntu-latest
